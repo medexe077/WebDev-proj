@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panier - École de Formation</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <header>
+         <div class="logo">
+            <h1><img src = Screenshot_2025-11-09_213912-removebg-preview.png alt = logo class="logo"></h1> 
+        </div>
+        <nav>
+            <a href="index.html">Accueil</a>
+            <a href="formations.html">Formations</a>
+            <a href="panier.html" class="active">Panier 🛒</a>
+            <a href="login.html">Connexion</a>
+             <a href="paimenet.html">Paiment</a>
+        </nav>
+    </header>
+
+    <!-- Page Title -->
+    <section class="page-title">
+        <h1><b><u>Mon Panier 🛒</u></b></h1>
+        <p>Vérifiez vos formations sélectionnées avant de passer au paiement</p>
+    </section>
+
+    <!-- Panier Content -->
+    <section class="panier-section">
+        <div class="panier-items">
+            <h1>Formations dans votre panier</h1>
+            
+            <h2>
+            <div class="panier-item">
+                <img src="https://cdn-icons-png.flaticon.com/512/1005/1005141.png" alt="Formation">
+                <div class="panier-item-details">
+                    <h3>Programmation Web</h3>
+                    <p>Durée: 3 mois • Niveau: Débutant</p>
+                </div>
+                <div class="panier-item-price">
+                    <p class="price">15 000 DA</p>
+                    <button class="btn-remove">Retirer</button>
+                </div>
+            </div>
+
+            <!-- Item 2 -->
+            <div class="panier-item">
+                <img src="https://cdn-icons-png.flaticon.com/512/4712/4712109.png" alt="Formation">
+                <div class="panier-item-details">
+                    <h3>Intelligence Artificielle</h3>
+                    <p>Durée: 4 mois • Niveau: Intermédiaire</p>
+                </div>
+                <div class="panier-item-price">
+                    <p class="price">20 000 DA</p>
+                    <button class="btn-remove">Retirer</button>
+                </div>
+            </div>
+        </h2>
+
+           
+            <div class="panier-item">
+                <img src="https://cdn-icons-png.flaticon.com/512/1055/1055666.png" alt="Formation">
+                <div class="panier-item-details">
+                    <h3>Design UI/UX</h3>
+                    <p>Durée: 3 mois • Niveau: Débutant</p>
+                </div>
+                <div class="panier-item-price">
+                    <p class="price">18 000 DA</p>
+                    <button class="btn-remove">Retirer</button>
+                </div>
+            </div>
+
+            <!-- Empty cart message (hide if items exist) -->
+            <div class="panier-vide" style="display: none;">
+                <p>🛒 Votre panier est vide</p>
+                <a href="formations.html" class="btn-primary">Découvrir nos formations</a>
+            </div>
+        </div>
+
+        <!-- Résumé -->
+        <div class="panier-resume">
+            <h2>Résumé de la commande</h2>
+            
+            <div class="resume-line">
+                <span>Sous-total</span>
+                <span>53 000 DA</span>
+            </div>
+            
+            <div class="resume-line">
+                <span>Réduction (20%)</span>
+                <span class="reduction">- 10 600 DA</span>
+            </div>
+            
+            <div class="resume-line total">
+                <span>Total</span>
+                <span>42 400 DA</span>
+            </div>
+<br> 
+            <a href = "paimenet.html" class="btn-primary"> Passer au Paiment</a>
+<br>
+                <br>
+            <div class="promo-code">
+                <input type="text" placeholder="Code promo">
+                <br>
+                <br>
+                
+                <button class="btn-secondary">Appliquer</button>
+            </div>
+
+            <div class="garanties">
+                <p>✅ Accès illimité à vie</p>
+                <p>✅ Certificat à la fin</p>
+                <p>✅ Support 24/7</p>
+                <p>✅ Garantie 30 jours</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>École de Formation</h3>
+                <p>Votre partenaire pour réussir dans le monde digital</p>
+            </div>
+            <div class="footer-section">
+                <h3>Liens Rapides</h3>
+                <ul>
+                    <li><a href="#">À propos</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Carrières</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <p>Email: contact@ecole.com</p>
+                <p>Tél: +213 XXX XXX XXX</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2025 École de Formation | Tous droits réservés</p>
+        </div>
+    </footer>
+</body>
+</html>
