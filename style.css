@@ -1,0 +1,228 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family:Arial, Helvetica, sans-serif;
+    background: #f5f6fc;
+    color: rgba(23, 11, 116, 0.977);
+    line-height: 1.9;
+
+} 
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 30px;
+    background: rgba(23, 11, 116, 0.977);
+}
+
+.logo {
+  width: 130px;   
+  height: auto;  
+}
+
+
+nav a {
+    color: rgba(255, 255, 255, 0.977);
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+}
+
+nav a:hover, nav a.active {
+    background: #000306;
+    color: #dddde0;
+}
+
+.hero {
+    display: flex;
+    padding: 100px 50px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.hero-content { width: 50%; padding-right: 50px; }
+.hero-content h2 { color: rgba(23, 11, 116, 0.977);; font-size: 48px; margin-bottom: 20px; }
+.hero-content p { color: rgba(23, 11, 116, 0.977); margin-bottom: 30px; }
+
+.hero-image { width: 90%; text-align: center; }
+.hero-image img { width: 90%; max-width: 700px; }
+
+.btn-primary {
+    background:rgba(219, 219, 223, 0.977);
+    color: rgba(23, 11, 116, 0.977);;
+    padding: 15px 40px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+}
+.btn-primary:hover { background: #0097a7; }
+
+.btn-secondary {
+    background: transparent;
+    color: #dadbe1;
+    border: 2px solid #025364;
+    padding: 15px 40px;
+    border-radius: 30px;
+    cursor: pointer;
+    justify-content: center;
+}
+btn-l
+.btn-secondary:hover {
+    background: #025364;
+    color: rgba(183, 169, 169, 0.951);
+}
+
+section {
+    padding: 60px 50px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+
+.card {
+    background-color: rgba(255, 255, 255, 0.05); /* transparent dark card */
+    border-radius: 15px; /* rounded corners */
+    padding: 30px 20px; /* space inside */
+    text-align: center;
+    width: 300px; /* card width */
+    transition: transform 0.3s, background-color 0.3s; /* hover effect */
+    margin: 10px;
+    display: inline-block; /* makes cards sit side by side */
+}
+
+.card:hover {
+    background-color: rgba(255, 255, 255, 0.1); /* lighter on hover */
+    transform: translateY(-5px); /* slight lift */
+}
+
+.feature-icon {
+    font-size: 48px;
+    margin-bottom: 15px;
+}
+
+.card h3 {
+    font-size: 20px;
+    color: #025364;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.7);
+}
+.formations-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 40px 0;
+}
+.event-img {
+  width: 120px;          /* controls image width */
+  height: auto;          /* keeps proportions */
+  object-fit: contain;   /* keeps full image inside area */
+  margin-bottom: 10px;   /* space below image */
+  display: block;        /* centers easily */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*lfooter */
+
+footer {
+    background: rgba(0,0,0,0.3);
+    padding: 60px 50px 20px;
+    text-align: center;
+}
+footer a { color: rgba(255,255,255,0.7); text-decoration: none; }
+footer a:hover { color: #025364; }
+
+/* ===== RESPONSIVE ===== */
+@media (max-width:768px) {
+    .hero { flex-direction: column; padding: 60px 20px; }
+    .hero-content, .hero-image { width: 100%; }
+    .card { width: 100%; margin-bottom: 20px; }
+} 
+
+.event-img {
+    width: 100%;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+
+}
+.psps{
+    text-align: center;
+}
+.spsp{
+    width: 200px;
+   ;
+}
+
+.sd{
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+.admin-content{
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+.panier-item{
+width: 100px;
+
+}
+.event-card-past{
+     width: 100%;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+
+}
+.payment-section{
+    background-color: #dadbe1;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+}
+.payment-container{
+    background-color: #dadbe1;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+}
+ .panier-item{
+    background-color: #dadbe1;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    
+}
+ .footer-content{
+    background-color: #dadbe1;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+ }
+ .footer-section{
+background-color: #dadbe1;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+ }
+ .page-title{
+    background-color: #dadbe1;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    left: 100px;
+ }
