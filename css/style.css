@@ -1,0 +1,401 @@
+/* ========= Base reset ========= */
+*{margin:0;padding:0;box-sizing:border-box}
+img{max-width:100%;height:auto;display:block}
+a{color:inherit}
+body{
+  font-family: Arial, Helvetica, sans-serif;
+  background:#f5f6fc;
+  color: rgba(23, 11, 116, 0.977);
+  line-height:1.6;
+}
+
+/* ========= Header / Navbar ========= */
+.site-header{
+  position:sticky;
+  top:0;
+  z-index:1000;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:16px;
+  padding:14px 18px;
+  background: rgba(23, 11, 116, 0.977);
+}
+.logo{width:130px;height:auto}
+.logo-link{display:inline-flex;align-items:center;text-decoration:none}
+.site-nav{
+  display:flex;
+  flex-wrap:wrap;
+  gap:8px;
+  align-items:center;
+  justify-content:flex-end;
+}
+.site-nav a{
+  color: rgba(255, 255, 255, 0.977);
+  text-decoration:none;
+  padding:10px 14px;
+  border-radius:999px;
+  transition: background .15s ease, color .15s ease;
+  white-space:nowrap;
+  font-size:14px;
+}
+.site-nav a:hover,
+.site-nav a.active{
+  background:#000306;
+  color:#dddde0;
+}
+.nav-toggle{
+  display:none;
+  background:transparent;
+  border:1px solid rgba(255,255,255,0.35);
+  color:#fff;
+  padding:8px 12px;
+  border-radius:12px;
+  cursor:pointer;
+}
+
+/* ========= Buttons ========= */
+.btn-primary{
+  display:inline-block;
+  background:rgba(219, 219, 223, 0.977);
+  color: rgba(23, 11, 116, 0.977);
+  padding:12px 22px;
+  border:none;
+  border-radius:999px;
+  cursor:pointer;
+  text-decoration:none;
+  font-weight:600;
+}
+.btn-primary:hover{filter:brightness(.95)}
+.btn-secondary{
+  display:inline-block;
+  background:transparent;
+  color: rgba(23, 11, 116, 0.977);
+  border:2px solid rgba(23, 11, 116, 0.35);
+  padding:12px 22px;
+  border-radius:999px;
+  cursor:pointer;
+  text-decoration:none;
+  font-weight:600;
+}
+.btn-secondary:hover{background:rgba(23, 11, 116, 0.08)}
+
+/* ========= Generic sections ========= */
+section{padding:56px 18px;max-width:1100px;margin:0 auto}
+.page-title{padding-top:34px;padding-bottom:34px;text-align:center}
+.page-title p{opacity:.9;margin-top:10px}
+.hero{display:flex;gap:30px;align-items:center}
+.hero-content{flex:1}
+.hero-content h2{font-size:44px;line-height:1.15;margin-bottom:14px}
+.hero-content p{margin-bottom:18px}
+.hero-image{flex:1;display:flex;justify-content:center}
+.features{display:flex;gap:16px;flex-wrap:wrap;justify-content:center}
+.feature-card{
+  background:#fff;
+  border-radius:16px;
+  padding:18px 16px;
+  width:300px;
+  box-shadow:0 8px 20px rgba(0,0,0,.06);
+  text-align:center;
+}
+.feature-icon{font-size:42px;margin-bottom:10px}
+.stats{display:flex;gap:12px;flex-wrap:wrap;justify-content:center}
+.stat-item{
+  background:#fff;
+  border-radius:16px;
+  padding:16px 18px;
+  width:240px;
+  text-align:center;
+  box-shadow:0 8px 20px rgba(0,0,0,.06);
+}
+
+/* ========= Login ========= */
+.login-section{padding-top:40px}
+.login-container{
+  display:grid;
+  grid-template-columns: 1.2fr .8fr;
+  gap:18px;
+  align-items:start;
+}
+.login-box, .login-benefits{
+  background:#fff;
+  border-radius:18px;
+  padding:22px;
+  box-shadow:0 10px 26px rgba(0,0,0,.07);
+}
+.login-box h2{margin-bottom:6px}
+.login-subtitle{opacity:.85;margin-bottom:18px}
+.login-form .form-group{margin-bottom:14px}
+.login-form label{display:block;margin-bottom:6px;font-weight:600}
+.login-form input[type="email"],
+.login-form input[type="password"],
+.login-form input[type="text"]{
+  width:100%;
+  padding:12px 14px;
+  border-radius:12px;
+  border:1px solid rgba(0,0,0,.12);
+  outline:none;
+}
+.login-form input:focus{border-color: rgba(23, 11, 116, 0.55)}
+.form-options{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:10px;
+  margin:12px 0 18px;
+  font-size:14px;
+}
+.checkbox-label{display:flex;align-items:center;gap:8px}
+.forgot-password{opacity:.9;text-decoration:underline}
+.full-width{width:100%}
+.divider{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  margin:16px 0;
+  opacity:.8;
+}
+.divider::before, .divider::after{
+  content:"";
+  flex:1;
+  height:1px;
+  background:rgba(0,0,0,.14);
+}
+.btn-social{
+  width:100%;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:10px;
+  padding:12px 14px;
+  border-radius:12px;
+  border:1px solid rgba(0,0,0,.12);
+  background:#fff;
+  cursor:pointer;
+  margin-bottom:10px;
+}
+.signup-link{margin-top:10px;font-size:14px}
+.benefits-list{margin-top:12px;padding-left:18px}
+.spsp{width:220px;margin:14px auto 0}
+
+/* ========= Contact ========= */
+.contact-section{padding-top:18px}
+.contact-card{
+  background:#fff;
+  border-radius:18px;
+  padding:22px;
+  box-shadow:0 10px 26px rgba(0,0,0,.07);
+  max-width:620px;
+  margin:0 auto;
+  text-align:center;
+}
+.contact-card a{text-decoration:underline}
+.contact-note{margin-top:14px;font-weight:700}
+
+/* ========= Panier ========= */
+.panier-section{
+  display:grid;
+  grid-template-columns: 1.3fr .7fr;
+  gap:18px;
+  align-items:start;
+}
+.panier-items, .panier-resume{
+  background:#fff;
+  border-radius:18px;
+  padding:22px;
+  box-shadow:0 10px 26px rgba(0,0,0,.07);
+}
+.panier-item{
+  display:flex;
+  gap:14px;
+  align-items:center;
+  justify-content:space-between;
+  padding:14px 0;
+  border-bottom:1px solid rgba(0,0,0,.08);
+}
+.panier-item:last-child{border-bottom:none}
+.panier-item img{width:54px}
+.panier-item-details{flex:1}
+.panier-item-price{text-align:right}
+.btn-remove{
+  margin-top:6px;
+  padding:8px 12px;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,.15);
+  background:#fff;
+  cursor:pointer;
+}
+.resume-line{display:flex;justify-content:space-between;margin-top:10px}
+.resume-line.total{font-weight:800;margin-top:14px}
+.reduction{color:#b00020}
+
+/* ========= Payment ========= */
+.payment-container{
+  display:grid;
+  grid-template-columns: 1.2fr .8fr;
+  gap:18px;
+}
+.payment-form-wrapper, .order-summary{
+  background:#fff;
+  border-radius:18px;
+  padding:22px;
+  box-shadow:0 10px 26px rgba(0,0,0,.07);
+}
+
+/* ========= Admin dashboard ========= */
+.admin-header{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:14px 18px;
+  background: rgba(23, 11, 116, 0.977);
+  color:#fff;
+}
+.btn-logout{color:#fff;text-decoration:underline}
+.admin-layout{
+  display:grid;
+  grid-template-columns: 260px 1fr;
+  gap:18px;
+  max-width:1100px;
+  margin:22px auto;
+  padding:0 18px 40px;
+}
+.admin-sidebar{
+  background:#fff;
+  border-radius:18px;
+  padding:16px;
+  box-shadow:0 10px 26px rgba(0,0,0,.07);
+  height:fit-content;
+}
+.admin-nav a{
+  display:block;
+  padding:10px 12px;
+  border-radius:12px;
+  text-decoration:none;
+  margin-bottom:8px;
+  border:1px solid transparent;
+}
+.admin-nav a:hover, .admin-nav a.active{
+  background:rgba(23, 11, 116, 0.08);
+  border-color:rgba(23, 11, 116, 0.12);
+}
+.admin-content{
+  background:#fff;
+  border-radius:18px;
+  padding:22px;
+  box-shadow:0 10px 26px rgba(0,0,0,.07);
+}
+.admin-stats{
+  display:grid;
+  grid-template-columns: repeat(2, minmax(0,1fr));
+  gap:14px;
+  margin-top:14px;
+}
+.stat-card{
+  background:#f7f8ff;
+  border-radius:16px;
+  padding:14px;
+}
+.admin-table{width:100%;border-collapse:collapse;margin-top:12px}
+.admin-table th, .admin-table td{padding:10px;border-bottom:1px solid rgba(0,0,0,.08);text-align:left}
+
+/* ========= Footer ========= */
+footer{
+  background:rgba(0,0,0,0.05);
+  padding:44px 18px 18px;
+  margin-top:30px;
+}
+.footer-content{
+  max-width:1100px;
+  margin:0 auto;
+  display:grid;
+  grid-template-columns: repeat(3, minmax(0,1fr));
+  gap:14px;
+  text-align:left;
+}
+.footer-section ul{list-style:none;margin-top:10px}
+.footer-section li{margin-top:8px}
+.footer-section a{text-decoration:underline}
+.footer-bottom{text-align:center;margin-top:18px;opacity:.9}
+
+/* ========= Responsive ========= */
+@media (max-width: 900px){
+  .hero{flex-direction:column}
+  .login-container, .panier-section, .payment-container{grid-template-columns:1fr}
+  .admin-layout{grid-template-columns:1fr}
+  .admin-stats{grid-template-columns:1fr}
+}
+@media (max-width: 720px){
+  .nav-toggle{display:inline-flex}
+  .site-nav{display:none;width:100%}
+  .site-header{flex-wrap:wrap}
+  .site-nav.open{display:flex;flex-direction:column;align-items:stretch}
+  .site-nav a{width:100%;text-align:center}
+}
+
+
+
+.auth-page{
+  padding-top:40px;
+}
+
+
+.auth-page .auth-card{
+  background:#fff;
+  border-radius:18px;
+  padding:22px;
+  box-shadow:0 10px 26px rgba(0,0,0,.07);
+  max-width:420px;
+  margin:0 auto;
+}
+
+
+.auth-card h2{
+  margin-bottom:6px;
+}
+.auth-subtitle{
+  opacity:.85;
+  margin-bottom:18px;
+}
+
+.auth-form .input-group{
+  margin-bottom:14px;
+  position:relative;
+}
+
+.auth-form input{
+  width:100%;
+  padding:12px 14px;
+  border-radius:12px;
+  border:1px solid rgba(0,0,0,.12);
+  outline:none;
+}
+
+.auth-form input:focus{
+  border-color: rgba(23, 11, 116, 0.55);
+}
+
+/* Icons inside inputs (FontAwesome) */
+.input-group i{
+  position:absolute;
+  left:12px;
+  top:50%;
+  transform:translateY(-50%);
+  opacity:.6;
+}
+
+.input-group input{
+  padding-left:38px;
+}
+
+/* Footer text */
+.auth-footer{
+  margin-top:12px;
+  font-size:14px;
+  text-align:center;
+}
+
+.auth-footer a{
+  text-decoration:underline;
+  font-weight:600;
+}
