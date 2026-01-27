@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>École de Formation - Accueil</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="logo-wrap">
+    <a class="logo-link" href="index.html" aria-label="Accueil">
+      <img src="Screenshot_2025-11-09_213912-removebg-preview.png" alt="Logo" class="logo">
+    </a>
+  </div>
+
+  <nav class="site-nav" aria-label="Navigation principale">
+    <a href="index.html">Accueil</a>
+    <a href="formations.html">Formations</a>
+    <a href="apropos.html">À propos</a>
+    <a href="Contact.html">Contact</a>
+    <a href="panier.html">Panier</a>
+    <a href="paimenet.html">Paiement</a>
+    <a href="DashAdmin.html">Dashboard</a>
+    <a href="login.html">Connexion</a>
+  </nav>
+
+  <button class="nav-toggle" type="button" aria-label="Ouvrir le menu" aria-expanded="false">
+    ☰
+  </button>
+</header>
+<section class="page-title">
+        <h1>Paiement Sécurisé 💳</h1>
+        <p>Finalisez votre inscription en toute sécurité</p>
+    </section>
+
+   
+    <section class="payment-section">
+        <div class="payment-container">
+          
+            <div class="payment-form-wrapper">
+                <h2>Informations de paiement</h2>
+
+            
+                <div class="payment-methods">
+                    <div class="payment-method active">
+                        <input type="radio" name="payment" id="card" checked>
+                        <label for="card">💳 Carte bancaire</label>
+                    </div>
+                    <div class="payment-method">
+                        <input type="radio" name="payment" id="cib">
+                        <label for="cib">🏦 CIB</label>
+                    </div>
+                    <div class="payment-method">
+                        <input type="radio" name="payment" id="virement">
+                        <label for="virement">🔄 Virement</label>
+                    </div>
+                </div>
+
+                <!-- Card Form -->
+                <form class="card-form">
+                    <div class="form-group">
+                        <label for="card-name">Nom sur la carte</label>
+                        <input type="text" id="card-name" placeholder="AHMED BENALI" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="card-number">Numéro de carte</label>
+                        <input type="text" id="card-number" placeholder="1234 5678 9012 3456" maxlength="19" required>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="expiry">Date d'expiration</label>
+                            <input type="text" id="expiry" placeholder="MM/AA" maxlength="5" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="cvv">CVV</label>
+                            <input type="text" id="cvv" placeholder="123" maxlength="3" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label>
+                            <input type="checkbox" required>
+                            J'accepte les <a href="#">conditions générales</a> et la <a href="#">politique de confidentialité</a>
+                        </label>
+                    </div>
+
+                    <button type="submit" class="btn-primary full-width">
+                        Payer 42 400 DA
+                    </button>
+
+                    <div class="secure-payment">
+                        <p>🔒 Paiement 100% sécurisé</p>
+                        <div class="payment-logos">
+                            <img src="https://cdn-icons-png.flaticon.com/512/349/349221.png" alt="Visa" width="20">
+                            <img src="https://cdn-icons-png.flaticon.com/512/349/349228.png" alt="Mastercard" width="20">
+                            <img src="https://cdn-icons-png.flaticon.com/512/5968/5968382.png" alt="SSL" width="20">
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+            <!-- Order Summary -->
+            <div class="order-summary">
+                <h2>Récapitulatif de commande</h2>
+
+                <div class="summary-items">
+                    <div class="summary-item">
+                        <img src="https://cdn-icons-png.flaticon.com/512/1005/1005141.png" alt="Formation">
+                        <div>
+                            <h4>Programmation Web</h4>
+                            <p>3 mois</p>
+                        </div>
+                        <span class="item-price">15 000 DA</span>
+                    </div>
+
+                    <div class="summary-item">
+                        <img src="https://cdn-icons-png.flaticon.com/512/4712/4712109.png" alt="Formation">
+                        <div>
+                            <h4>Intelligence Artificielle</h4>
+                            <p>4 mois</p>
+                        </div>
+                        <span class="item-price">20 000 DA</span>
+                    </div>
+
+                    <div class="summary-item">
+                        <img src="https://cdn-icons-png.flaticon.com/512/1055/1055666.png" alt="Formation">
+                        <div>
+                            <h4>Design UI/UX</h4>
+                            <p>3 mois</p>
+                        </div>
+                        <span class="item-price">18 000 DA</span>
+                    </div>
+                </div>
+
+                <div class="summary-totals">
+                    <div class="summary-line">
+                        <span>Sous-total</span>
+                        <span>53 000 DA</span>
+                    </div>
+                    <div class="summary-line">
+                        <span>Réduction (20%)</span>
+                        <span class="reduction">- 10 600 DA</span>
+                    </div>
+                    <div class="summary-line total">
+                        <span>Total à payer</span>
+                        <span>42 400 DA</span>
+                    </div>
+                </div>
+
+                <div class="summary-benefits">
+                    <h3>Inclus dans votre achat :</h3>
+                    <ul>
+                        <li>✅ Accès illimité à vie</li>
+                        <li>✅ Certificat de fin de formation</li>
+                        <li>✅ Support 24/7</li>
+                        <li>✅ Mises à jour gratuites</li>
+                        <li>✅ Accès à la communauté</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>École de Formation</h3>
+                <p>Votre partenaire pour réussir dans le monde digital</p>
+            </div>
+            <div class="footer-section">
+                <h3>Liens Rapides</h3>
+                <ul>
+                    <li><a href="apropos.html">À propos</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <p>Email: contact@ecole.com</p>
+                <p>Tél: +213 541 756 099 </p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2025 École de Formation | Tous droits réservés</p>
+        </div>
+    </footer>
+
+<script>
+(function () {
+  // Highlight current page in the navbar (no need to hardcode "active" on each page)
+  var path = (window.location.pathname || "").split("/").pop() || "index.html";
+  var links = document.querySelectorAll(".site-nav a");
+  links.forEach(function (a) {
+    var href = (a.getAttribute("href") || "").split("/").pop();
+    if (href === path) a.classList.add("active");
+  });
+
+  // Mobile menu toggle
+  var btn = document.querySelector(".nav-toggle");
+  var nav = document.querySelector(".site-nav");
+  if (btn && nav) {
+    btn.addEventListener("click", function () {
+      var isOpen = nav.classList.toggle("open");
+      btn.setAttribute("aria-expanded", String(isOpen));
+    });
+  }
+})();
+</script>
+
+</body>
+</html>

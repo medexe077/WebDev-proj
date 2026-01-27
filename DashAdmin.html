@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Admin - École de Formation</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="logo-wrap">
+    <a class="logo-link" href="index.html" aria-label="Accueil">
+      <img src="Screenshot_2025-11-09_213912-removebg-preview.png" alt="Logo" class="logo">
+    </a>
+  </div>
+
+  <nav class="site-nav" aria-label="Navigation principale">
+    <a href="index.html">Accueil</a>
+    <a href="formations.html">Formations</a>
+    <a href="apropos.html">À propos</a>
+    <a href="Contact.html">Contact</a>
+    <a href="panier.html">Panier</a>
+    <a href="paimenet.html">Paiement</a>
+    <a href="DashAdmin.html">Dashboard</a>
+    <a href="login.html">Connexion</a>
+  </nav>
+
+  <button class="nav-toggle" type="button" aria-label="Ouvrir le menu" aria-expanded="false">
+    ☰
+  </button>
+</header>
+<!-- Admin Header -->
+    
+
+    
+    <div class="admin-layout">
+       
+        <aside class="admin-sidebar">
+            <nav class="admin-nav">
+                <a href="DashAdmin.html" class="active">📊 Tableau de bord</a>
+                <a href="index.html">👥 Acceuil</a>
+                <a href="formations.html">📚 Formations</a>
+                <a href="paimenet.html">💰 Paiements</a>
+                <a href="login.html">💰 Connectez-vous</a>
+               
+           
+            </nav>
+        </aside>
+
+       <main class="admin-content">
+            <h1><b><u>Tableau de bord</b></u></h1>
+            
+            <!-- Stats Cards -->
+            <div class="admin-stats">
+                <div class="stat-card">
+                    <div class="stat-icon">👥</div>
+                    <div class="stat-info">
+                        <h3>1,542</h3>
+                        <p>Étudiants inscrits</p>
+                        <span class="stat-change positive">+12% ce mois</span>
+                    </div> 
+                </div>
+
+                <div class="stat-card">
+                    <div class="stat-icon">📚</div>
+                    <div class="stat-info">
+                        <h3>52</h3>
+                        <p>Formations actives</p>
+                        <span class="stat-change positive">+3 nouvelles</span>
+                    </div>
+                </div>
+
+                <div class="stat-card">
+                    <div class="stat-icon">💰</div>
+                    <div class="stat-info">
+                        <h3>2.4M DA</h3>
+                        <p>Revenus ce mois</p>
+                        <span class="stat-change positive">+18%</span>
+                    </div>
+                </div>
+
+                <div class="stat-card">
+                    <div class="stat-icon">⭐</div>
+                    <div class="stat-info">
+                        <h3>4.8/5</h3>
+                        <p>Satisfaction moyenne</p>
+                        <span class="stat-change neutral">+0.2 points</span>
+                    </div>
+                </div>
+            </div>
+
+            
+            <div class="admin-section">
+                <h2>Activités récentes</h2>
+                <div class="activity-list">
+                    <div class="activity-item">
+                        <span class="activity-icon">👤</span>
+                        <div class="activity-details">
+                            <p><strong>Nouvel étudiant</strong></p>
+                            <p>Ahmed Benali s'est inscrit à "Programmation Web"</p>
+                        </div>
+                        <span class="activity-time">Il y a 5 min</span>
+                    </div>
+
+                    <div class="activity-item">
+                        <span class="activity-icon">💰</span>
+                        <div class="activity-details">
+                            <p><strong>Paiement reçu</strong></p>
+                            <p>Sarah Meziane - 20,000 DA</p>
+                        </div>
+                        <span class="activity-time">Il y a 12 min</span>
+                    </div>
+
+                    <div class="activity-item">
+                        <span class="activity-icon">⭐</span>
+                        <div class="activity-details">
+                            <p><strong>Nouvel avis</strong></p>
+                            <p>Note 5/5 sur "Intelligence Artificielle"</p>
+                        </div>
+                        <span class="activity-time">Il y a 1h</span>
+                    </div>
+
+                    <div class="activity-item">
+                        <span class="activity-icon">📚</span>
+                        <div class="activity-details">
+                            <p><strong>Formation mise à jour</strong></p>
+                            <p>"Design UI/UX" - Nouveau module ajouté</p>
+                        </div>
+                        <span class="activity-time">Il y a 2h</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Quick Actions -->
+            <div class="admin-section">
+                <h2>Actions rapides</h2>
+                <div class="quick-actions">
+                    <button class="action-btn">➕ Ajouter formation</button>
+                    <button class="action-btn">👤 Ajouter étudiant</button>
+                    <button class="action-btn">📅 Créer événement</button>
+                    <button class="action-btn">✉️ Envoyer newsletter</button>
+                </div>
+            </div>
+
+            <!-- Top Formations -->
+            <div class="admin-section">
+                <h2>Formations les plus populaires</h2>
+                <table class="admin-table">
+                    <thead>
+                        <tr>
+                            <th>Formation</th>
+                            <th>Inscrits</th>
+                            <th>Note</th>
+                            <th>Revenus</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Programmation Web</td>
+                            <td>342</td>
+                            <td>4.9 ⭐</td>
+                            <td>5,130,000 DA</td>
+                        </tr>
+                        <tr>
+                            <td>Intelligence Artificielle</td>
+                            <td>298</td>
+                            <td>4.8 ⭐</td>
+                            <td>5,960,000 DA</td>
+                        </tr>
+                        <tr>
+                            <td>Design UI/UX</td>
+                            <td>256</td>
+                            <td>4.7 ⭐</td>
+                            <td>4,608,000 DA</td>
+                        </tr>
+                        <tr>
+                            <td>Marketing Digital</td>
+                            <td>189</td>
+                            <td>4.6 ⭐</td>
+                            <td>2,835,000 DA</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </main>
+    </div>
+
+<script>
+(function () {
+  // Highlight current page in the navbar (no need to hardcode "active" on each page)
+  var path = (window.location.pathname || "").split("/").pop() || "index.html";
+  var links = document.querySelectorAll(".site-nav a");
+  links.forEach(function (a) {
+    var href = (a.getAttribute("href") || "").split("/").pop();
+    if (href === path) a.classList.add("active");
+  });
+
+  // Mobile menu toggle
+  var btn = document.querySelector(".nav-toggle");
+  var nav = document.querySelector(".site-nav");
+  if (btn && nav) {
+    btn.addEventListener("click", function () {
+      var isOpen = nav.classList.toggle("open");
+      btn.setAttribute("aria-expanded", String(isOpen));
+    });
+  }
+})();
+</script>
+
+</body>
+</html>

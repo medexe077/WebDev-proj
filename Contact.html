@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - École de Formation</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="sd">
+<header class="site-header">
+  <div class="logo-wrap">
+    <a class="logo-link" href="index.html" aria-label="Accueil">
+      <img src="Screenshot_2025-11-09_213912-removebg-preview.png" alt="Logo" class="logo">
+    </a>
+  </div>
+
+  <nav class="site-nav" aria-label="Navigation principale">
+    <a href="index.html">Accueil</a>
+    <a href="formations.html">Formations</a>
+    <a href="apropos.html">À propos</a>
+    <a href="Contact.html">Contact</a>
+    <a href="panier.html">Panier</a>
+    <a href="paimenet.html">Paiement</a>
+    <a href="DashAdmin.html">Dashboard</a>
+    <a href="login.html">Connexion</a>
+  </nav>
+
+  <button class="nav-toggle" type="button" aria-label="Ouvrir le menu" aria-expanded="false">
+    ☰
+  </button>
+</header>
+<section class="page-title">
+      <h1>Contactez-nous</h1>
+      <p>Nous répondons dès que possible.</p>
+    </section>
+
+    <section class="contact-section">
+      <div class="contact-card">
+        <h2>Coordonnées</h2>
+        <p>📧 Email : <a href="mailto:kheddarimohamed@gmail.com">kheddarimohamed@gmail.com</a></p>
+        <p>📱 Téléphone : <a href="tel:+213541756099">+213 541 756 099</a></p>
+        <p class="contact-note">Merci pour votre confiance 🙏</p>
+      </div>
+    </section>
+
+<script>
+(function () {
+  // Highlight current page in the navbar (no need to hardcode "active" on each page)
+  var path = (window.location.pathname || "").split("/").pop() || "index.html";
+  var links = document.querySelectorAll(".site-nav a");
+  links.forEach(function (a) {
+    var href = (a.getAttribute("href") || "").split("/").pop();
+    if (href === path) a.classList.add("active");
+  });
+
+  // Mobile menu toggle
+  var btn = document.querySelector(".nav-toggle");
+  var nav = document.querySelector(".site-nav");
+  if (btn && nav) {
+    btn.addEventListener("click", function () {
+      var isOpen = nav.classList.toggle("open");
+      btn.setAttribute("aria-expanded", String(isOpen));
+    });
+  }
+})();
+</script>
+</body>
+
